@@ -1,5 +1,3 @@
-*{
-}
 /* NavBar --------------------------------------------------*/
 header{
     align-items: center;
@@ -121,8 +119,6 @@ ul{
     color: rgb(98, 242, 242);
     /*Useagradientbackgroundforthesectionheading*/font-size: 3.3rem;
     text-align: center;
-     /* Apply the animation to the heading */  :;
-    -webkit-animation: moveLeftToRight 4s linear infinite;
 }
 
 
@@ -176,7 +172,6 @@ ul{
     margin-top: 0px;
     box-shadow: 2px 3px 4px 2px rgb(57, 56, 56,0.5);
     transition: transform 0.3s ease-in-out, box-shadow 1s ease-in-out;
-    /*Addtransitionforsmootheffect*/:;
     -webkit-transition: transform 0.3s ease-in-out, box-shadow 1s ease-in-out;
     -moz-transition: transform 0.3s ease-in-out, box-shadow 1s ease-in-out;
     -ms-transition: transform 0.3s ease-in-out, box-shadow 1s ease-in-out;
@@ -290,6 +285,7 @@ footer{
         
     }
     100%{
+      cursor: pointer;
         height: 10%;
 
     }
@@ -318,16 +314,19 @@ footer{
     border: 2px solid rgb(50, 49, 49);
     font-size: 1rem;
     border-radius: 20px;
-    transition: background-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in, transform 0.3s ease-in;
-  }
+    transition: background-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in;
+    -webkit-transition: background-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in;
+    -ms-transition: background-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in;
+    -o-transition: background-color 0.5s ease-in, color 0.5s ease-in, box-shadow 0.5s ease-in;
+}
 
 .btn:hover {
-
     border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.5);
+    /*Increasingthesizeofthebuttonby30%onhover*/position: relative;
+    cursor: pointer;
 
-    box-shadow: 0 3px 10px 3px rgba(0, 0, 0, 0.5); /* Adding a background shadow on hover */
-    transform: scale(1.3); /* Increasing the size of the button by 30% on hover */
-    position: relative;
 }
 
 
@@ -486,6 +485,7 @@ footer{
 }
   
   .bttn:hover {
+    cursor: pointer;
     background-color: #FFBA00;
    color: #000;
     font-weight: bolder;
